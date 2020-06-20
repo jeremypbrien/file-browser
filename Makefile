@@ -11,7 +11,7 @@ GTK_CFLAGS = `pkg-config --cflags gtk+-3.0`
 GTK_LIBS = -lm `pkg-config --libs gtk+-3.0`
 
 CPPFLAGS := -Iinclude
-CFLAGS   := -g -Wall -std=c99 $(GTK_CFLAGS)
+CFLAGS   := -g -Wall -std=c99 -D_DEFAULT_SOURCE $(GTK_CFLAGS)
 LDFLAGS  := -Llib
 LDLIBS   := $(GTK_LIBS)
 
